@@ -7,6 +7,72 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [17.4.0] - 2026-09-16 - "Community Skill, Honest Local Saves, and Fork Intake"
+
+> Adds one reviewed community skill, keeps local catalog saves honest,
+> and opens the fork-safety intake to reviewed browser source.
+
+A maintenance release for Claude Code, Cursor, Codex CLI and Gemini CLI.
+It adds one community skill reviewed through the protected maintainer workflow,
+makes local save state honest when browser storage rejects a write, and lets
+reviewed browser-source fixes from forks be approved; the catalog contains
+2,123 skills and existing installation interfaces remain supported.
+
+### Start here
+
+- Install: `npx agentic-awesome-skills@17.4.0`
+- [Choose your tool](README.md#choose-your-tool)
+- [Best skills by tool](README.md#best-skills-by-tool)
+- [Bundles](docs/users/bundles.md)
+- [Workflows](docs/users/workflows.md)
+
+### New Skills
+
+### 📺 [YouTube Transcript](skills/youtube-transcript-skills/)
+
+**Fetch a video's spoken words without copying them by hand.** The skill
+calls the getyoutubetranscript.com REST API, so an agent can fetch a
+transcript, search global or in-channel video and channel results, resolve
+a channel handle to its ID, or pull a whole playlist for summarising,
+quoting or analysis.
+
+- **No scrapers or keys**: no `yt-dlp`, no headless browser, no Google API quota.
+- **First-time setup only with consent**: a free account (100 credits, no
+  card) can be provisioned by email and verification code, and nothing is
+  persisted beyond the session without confirmation.
+
+> **Try it:** `Summarize this video: https://www.youtube.com/watch?v=VIDEO_ID`
+
+---
+
+### Improvements
+
+- **Local saves stay honest**: `useSkillStars` and `useSkillShortlist` only
+  advance React state after the browser write actually succeeds and restore
+  the confirmed value when storage is unavailable or rejects a write.
+- **Fork-safety intake**: `apps/web-app/src/**` browser source (`.css`,
+  `.ts`, `.tsx`) is approval-safe with exact-head maintainer attestation,
+  and the pinned read-only agent-first preview workflow is approvable, so
+  reviewed web-app fixes from forks can be merged.
+- Refreshed canonical indexes, catalogs, plugin mirrors, editorial bundles,
+  and web assets for the 2,123-skill release.
+
+### Validation scope
+
+The source batch passed exact-head review, repository validation, reference
+and documentation-security checks, protected CI, CodeQL, dependency and
+license review, package publication and release-only Pages verification
+for the released commit.
+
+### Credits
+
+Thanks to @pushkarsingh32 (#1434, `youtube-transcript-skills`),
+@jhuang-tt (#1446), and @ShaunLinTW (#1448) for their contributions.
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+
 ## [17.2.0] - 2026-09-13 - "Three New Skills and Documentation Cleanup"
 
 > Adds three reviewed community skills and refreshes repository documentation
