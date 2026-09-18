@@ -1,3 +1,11 @@
+# Weather model data fetching skill - 2026-09-18
+
+- Added `weather-model-data-fetching` for public AWS S3 and HTTP archives,
+  GRIB2 inventory/range retrieval, Herbie provider fallback, verified caching,
+  point and sounding contracts, and lifecycle-aware cleanup.
+- Kept the contribution provider-neutral and source-only; generated catalogs and
+  plugin mirrors remain owned by protected canonical synchronization.
+
 # Full Snyk group reconciliation — 2026-09-06
 
 - Exported all 551 analytics rows and read all live project/issue records; distinguished stale CLI snapshots, mirror copies, and current findings.
