@@ -5,7 +5,7 @@ category: project-management
 risk: safe
 source: self
 source_type: self
-date_added: "2026-09-18"
+date_added: "2026-09-19"
 author: ShianMike
 tags: [project-management, execution-contracts, checkpoints, verification, agent-workflows]
 tools: [claude, cursor, gemini, codex, antigravity]

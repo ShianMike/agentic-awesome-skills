@@ -5,7 +5,7 @@ category: data
 risk: safe
 source: self
 source_type: self
-date_added: "2026-09-18"
+date_added: "2026-09-19"
 author: ShianMike
 tags: [weather, observations, metar, radiosonde, noaa, quality-control]
 tools: [claude, cursor, gemini, codex]
